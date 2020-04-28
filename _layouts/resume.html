@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- assign _resumesections = site.resumesections | sort: 'order' -%}
+{%- include header.html scrolly_nav=_resumesections -%}
+<!-- Main -->
+<div id="main">
+	{%- if page.content != "" -%}
+		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+	{%- endif -%}
+	<!-- Sections -->
+	{%- for _resumesection in _resumesections -%}
+		{%- include section.html title=_resumesection.title photo=_resumesection.cover-photo photo-alt=_resumesection.cover-photo-alt auto-header=_resumesection.auto-header content=_resumesection.content -%}
+	{%- endfor -%}
+</div>
