@@ -129,12 +129,12 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: #9ececc;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -186,8 +186,12 @@
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	ul, ol, dl, table {
 		margin-bottom: 2em;
+	}
+
+	p {
+		margin-bottom: 0em;
 	}
 
 	dl {
@@ -202,6 +206,10 @@
 
 	br.clear {
 		clear: both;
+	}
+
+	.center {
+		margin: auto;
 	}
 
 /* Sections/Article */
@@ -534,7 +542,7 @@
 			text-align: center;
 
 			a {
-				color: #41484c;
+				color: #7eaeac;
 				@include vendor('transition', 'color 0.35s ease-in-out');
 
 				&:hover {
