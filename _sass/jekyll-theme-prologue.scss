@@ -224,12 +224,14 @@ br.clear {
   flex: 50%;
 }
 
-.grid {
-  display: flex;
-}
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+  }
 
-.col-1-2 {
-  flex: 1;
+  .col-1-2 {
+    flex: 1;
+  }
 }
 
 /* Sections/Article */
