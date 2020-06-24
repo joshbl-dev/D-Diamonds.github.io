@@ -232,10 +232,6 @@ br.clear {
   flex: 1;
 }
 
-.cole-1-2:last-child {
-  margin-left: 20px;
-}
-
 /* Sections/Article */
 
 section, article {
@@ -258,11 +254,6 @@ section, article {
 
   .row > * {
     padding-top: 0;
-  }
-
-  ul, ol {
-    padding-left: 0.25em;
-    margin-left: 1.25em;
   }
 }
 
