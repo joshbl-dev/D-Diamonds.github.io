@@ -234,6 +234,13 @@ br.clear {
   }
 }
 
+@media screen and (max-width: 600px) {
+  li {
+    list-style-position: inside;
+  }
+}
+
+
 /* Sections/Article */
 
 section, article {
