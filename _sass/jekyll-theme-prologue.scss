@@ -213,7 +213,7 @@ br.clear {
 
 .center {
   margin: auto;
-}
+  display:inline-block}
 
 .rowL {
   display: flex
@@ -237,6 +237,13 @@ br.clear {
 @media screen and (max-width: 600px) {
   li {
     list-style-position: inside;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hide-mobile {
+    display: none;
+    visibility: hidden;
   }
 }
 
