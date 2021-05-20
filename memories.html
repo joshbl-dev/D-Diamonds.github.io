@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color: #eee;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        white-space: pre-wrap;
+        text-align: center;
+        width: 75%;
+        margin: auto;
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+
+    #message {
+        display: flex;
+        align-content: center;
+    }
+
+    .hello {
+        opacity: 1 !important;
+    }
+
+    .full {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .full .content {
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+
+    .full .content img {
+        left: 50%;
+        transform: translate3d(0, 0, 0);
+        animation: zoomin 1s ease;
+        max-width: 95%;
+        max-height: 75%;
+        margin: auto;
+    }
+
+    .byebye {
+        opacity: 0;
+    }
+
+    .byebye:hover {
+        transform: scale(0.2) !important;
+    }
+
+    .gallery {
+        display: grid;
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-auto-rows: 8px;
+    }
+
+    .gallery img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 16px #333;
+        transition: all 1.5s ease;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 32px #333;
+    }
+
+    .gallery .content {
+        /*padding: 4px;*/
+    }
+
+    .gallery .gallery-item {
+        transition: grid-row-start 300ms linear;
+        transition: transform 300ms ease;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    .gallery .gallery-item:hover {
+        transform: scale(1.025);
+    }
+
+    @media (max-width: 600px) {
+        .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        }
+    }
+
+    @media (max-width: 400px) {
+        .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        }
+    }
+
+    @-moz-keyframes zoomin {
+        0% {
+            max-width: 10%;
+            filter: blur(4px);
+        }
+        100% {
+            max-width: 95%;
+        }
+    }
+
+    @-webkit-keyframes zoomin {
+        0% {
+            max-width: 10%;
+            filter: blur(4px);
+        }
+        100% {
+            max-width: 95%;
+        }
+    }
+
+    @-o-keyframes zoomin {
+        0% {
+            max-width: 10%;
+            filter: blur(4px);
+        }
+        100% {
+            max-width: 95%;
+        }
+    }
+
+    @keyframes zoomin {
+        0% {
+            max-width: 10%;
+            filter: blur(4px);
+        }
+        100% {
+            max-width: 95%;
+        }
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sarah and Josh Gallery</title>
+</head>
+<body>
+
+<h1>Sarah and Josh Gallery</h1>
+
+<div id="message"><p>Dear Sarah,
+    Happy 2-month anniversary, although it feels like almost a year in terms of memories with you. From our first date at The Yard, our actual first date having sushi, I have enjoyed constant happiness and memorable moments with you. Our trip to the lake house is unforgettable, driving around on Jet Ski’s while breaking our backs and obviously staying up watching Survivor. When I wake up, I smile thinking of you and our future. When I go to sleep, I feel heart warmed by all our memories. All I want to do is keep making more memories with you. I cannot wait to visit you soon! I miss you a lot!
+    Love,
+    Joshua
+
+    Below is a gallery of our memories. I hope this page can grow with us.
+</p></div>
+
+<div class="gallery" id="gallery">
+    <div class="gallery-item">
+        <div class="content"><img src="https://share.icloud.com/photos/0uytXf_YIsPyEjaOy8CIR_BbA" alt=""></div>
+    </div>
+</div>
+
+</body>
+<script>
+    var gallery = document.querySelector('#gallery');
+    var getVal = function (elem, style) {
+        return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+    };
+    var getHeight = function (item) {
+        return item.querySelector('.content').getBoundingClientRect().height;
+    };
+    var resizeAll = function () {
+        var altura = getVal(gallery, 'grid-auto-rows');
+        var gap = getVal(gallery, 'grid-row-gap');
+        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+            var el = item;
+            el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+        });
+    };
+    gallery.querySelectorAll('img').forEach(function (item) {
+        item.classList.add('byebye');
+        if (item.complete) {
+            console.log(item.src);
+        } else {
+            item.addEventListener('load', function () {
+                var altura = getVal(gallery, 'grid-auto-rows');
+                var gap = getVal(gallery, 'grid-row-gap');
+                var gitem = item.parentElement.parentElement;
+                gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+                item.classList.remove('byebye');
+            });
+        }
+    });
+    window.addEventListener('resize', resizeAll);
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+            item.classList.toggle('full');
+        });
+    });
+
+</script>
+</html>
