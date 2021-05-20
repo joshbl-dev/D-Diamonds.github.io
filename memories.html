@@ -159,7 +159,10 @@
 <h1>Sarah and Josh Gallery</h1>
 
 <div id="message"><p>Dear Sarah,
-    Happy 2-month anniversary, although it feels like almost a year in terms of memories with you. From our first date at The Yard, our actual first date having sushi, I have enjoyed constant happiness and memorable moments with you. Our trip to the lake house is unforgettable, driving around on Jet Ski’s while breaking our backs and obviously staying up watching Survivor. When I wake up, I smile thinking of you and our future. When I go to sleep, I feel heart warmed by all our memories. All I want to do is keep making more memories with you. I cannot wait to visit you soon! I miss you a lot!
+    Happy 2-month anniversary, although it feels like almost a year in terms of memories with you. From our first date at The Yard, our actual first date having
+    sushi, I have enjoyed constant happiness and memorable moments with you. Our trip to the lake house is unforgettable, driving around on Jet Ski’s while
+    breaking our backs and obviously staying up watching Survivor. When I wake up, I smile thinking of you and our future. When I go to sleep, I feel heart
+    warmed by all our memories. All I want to do is keep making more memories with you. I cannot wait to visit you soon! I miss you a lot!
     Love,
     Joshua
 
@@ -167,14 +170,79 @@
 </p></div>
 
 <div class="gallery" id="gallery">
-    <div class="gallery-item">
-        <div class="content"><img src="https://share.icloud.com/photos/0uytXf_YIsPyEjaOy8CIR_BbA" alt=""></div>
-    </div>
 </div>
 
 </body>
 <script>
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+
+            // swap elements array[i] and array[j]
+            // we use "destructuring assignment" syntax to achieve that
+            // you'll find more details about that syntax in later chapters
+            // same can be written as:
+            // let t = array[i]; array[i] = array[j]; array[j] = t
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    var files = ["89DB3976-97AC-4063-B9D5-FCA74D7170EC.jpeg",
+        "FullSizeRender.jpeg",
+        "IMG_1269.JPEG",
+        "IMG_1270.JPEG",
+        "IMG_1930.JPG",
+        "IMG_2094.JPEG",
+        "IMG_2137.JPEG",
+        "IMG_2149.JPEG",
+        "IMG_2232.JPEG",
+        "IMG_2249.JPEG",
+        "IMG_2262.JPEG",
+        "IMG_2350.JPG",
+        "IMG_2385.JPG",
+        "IMG_2577.JPG",
+        "IMG_2599.JPG",
+        "IMG_2612.PNG",
+        "IMG_2614.JPG",
+        "IMG_2620.JPG",
+        "IMG_2636.JPG",
+        "IMG_2640.JPG",
+        "IMG_2641.JPG",
+        "IMG_2691.JPG",
+        "IMG_2692.JPG",
+        "IMG_2693.JPG",
+        "IMG_2697.PNG",
+        "IMG_2698.PNG",
+        "IMG_2699.PNG",
+        "IMG_2755.JPEG",
+        "IMG_2758.JPEG",
+        "IMG_2761.JPEG",
+        "IMG_2770.MP4",
+        "IMG_2778.JPEG",
+        "IMG_2784.JPEG",
+        "IMG_2788.JPEG",
+        "IMG_2792.JPG",
+        "IMG_2799.png",
+        "IMG_2805.JPG",
+        "IMG_2807.JPEG",
+        "IMG_2814.JPG",
+        "IMG_2833.JPG",
+        "IMG_2843.PNG",
+        "IMG_2844.PNG",
+        "IMG_2845.JPG",
+        "IMG_8291.JPG",
+        "IMG_8296.JPG",
+        "IMG_8297.JPG"
+    ]
+    shuffle(files)
     var gallery = document.querySelector('#gallery');
+    files.forEach(function (file) {
+        console.log(file)
+        gallery.insertAdjacentHTML("beforeend", "<div class=\"gallery-item\">\n" +
+            "        <div class=\"content\"><img src=\"assets/images/Memories/" + file + "\"></div>\n" +
+            "    </div>")
+    });
+
     var getVal = function (elem, style) {
         return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
     };
