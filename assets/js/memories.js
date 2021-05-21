@@ -60,7 +60,7 @@ const gallery = document.querySelector('#gallery');
 files.forEach(function (file) {
     console.log(file)
     gallery.insertAdjacentHTML("beforeend", "<div class=\"gallery-item\">\n" +
-        "        <div class=\"content\"><img src=\"assets/images/Memories/" + file + "\" alt=\"Missing memory\"></div>\n" +
+        "        <div class=\"content\"><img src=\"assets/images/Memories/" + file + "?t=" + new Date().getTime() + "\" alt=\"Missing memory\"></div>\n" +
         "    </div>")
 });
 
