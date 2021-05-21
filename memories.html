@@ -1,284 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body {
-        background-color: #eee;
-    }
 
-    h1 {
-        text-align: center;
-    }
-
-    p {
-        white-space: pre-wrap;
-        text-align: center;
-        width: 75%;
-        margin: auto;
-        padding-bottom: 25px;
-        font-size: 20px;
-    }
-
-    #message {
-        display: flex;
-        align-content: center;
-    }
-
-    .hello {
-        opacity: 1 !important;
-    }
-
-    .full {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-
-    .full .content {
-        background-color: rgba(0, 0, 0, 0.75) !important;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-content: center;
-    }
-
-    .full .content img {
-        left: 50%;
-        transform: translate3d(0, 0, 0);
-        animation: zoomin 1s ease;
-        max-width: 95%;
-        max-height: 75%;
-        margin: auto;
-    }
-
-    .byebye {
-        opacity: 0;
-    }
-
-    .byebye:hover {
-        transform: scale(0.2) !important;
-    }
-
-    .gallery {
-        display: grid;
-        grid-column-gap: 8px;
-        grid-row-gap: 8px;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-auto-rows: 8px;
-    }
-
-    .gallery img {
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 0 16px #333;
-        transition: all 1.5s ease;
-    }
-
-    .gallery img:hover {
-        box-shadow: 0 0 32px #333;
-    }
-
-    .gallery .content {
-        /*padding: 4px;*/
-    }
-
-    .gallery .gallery-item {
-        transition: grid-row-start 300ms linear;
-        transition: transform 300ms ease;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-
-    .gallery .gallery-item:hover {
-        transform: scale(1.025);
-    }
-
-    @media (max-width: 600px) {
-        .gallery {
-            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-        }
-    }
-
-    @media (max-width: 400px) {
-        .gallery {
-            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-        }
-    }
-
-    @-moz-keyframes zoomin {
-        0% {
-            max-width: 10%;
-            filter: blur(4px);
-        }
-        100% {
-            max-width: 95%;
-        }
-    }
-
-    @-webkit-keyframes zoomin {
-        0% {
-            max-width: 10%;
-            filter: blur(4px);
-        }
-        100% {
-            max-width: 95%;
-        }
-    }
-
-    @-o-keyframes zoomin {
-        0% {
-            max-width: 10%;
-            filter: blur(4px);
-        }
-        100% {
-            max-width: 95%;
-        }
-    }
-
-    @keyframes zoomin {
-        0% {
-            max-width: 10%;
-            filter: blur(4px);
-        }
-        100% {
-            max-width: 95%;
-        }
-    }
-
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/memories.css" />
     <title>Sarah and Josh Gallery</title>
 </head>
 <body>
 
 <h1>Sarah and Josh Gallery</h1>
 
-<div id="message"><p>Dear Sarah,
-    Happy 2-month anniversary, although it feels like almost a year in terms of memories with you. From our first date at The Yard, our actual first date having
-    sushi, I have enjoyed constant happiness and memorable moments with you. Our trip to the lake house is unforgettable, driving around on Jet Ski’s while
-    breaking our backs and obviously staying up watching Survivor. When I wake up, I smile thinking of you and our future. When I go to sleep, I feel heart
-    warmed by all our memories. All I want to do is keep making more memories with you. I cannot wait to visit you soon! I miss you a lot!
-    Love,
-    Joshua
+<h2 id="countdown">Countdown: --</h2>
 
-    Below is a gallery of our memories. I hope this page can grow with us.
+<div id="message"><p>Dear Sarah,
+    <br/>Happy 2-month anniversary, although it feels like almost a year in terms of memories with you. From our first date at The Yard, our actual first date
+    having sushi, I have enjoyed constant happiness and memorable moments with you. Our trip to the lake house is unforgettable, driving around on Jet Ski’s
+    while breaking our backs and obviously staying up watching Survivor. When I wake up, I smile thinking of you and our future. When I go to sleep, I feel
+    heart warmed by all our memories. All I want to do is keep making more memories with you. I cannot wait to visit you soon! I miss you a lot!
+    <br/>Love,
+    <br/>Joshua
+    <br/>
+    <br/>Below is a gallery of our memories. I hope this page can grow with us.
 </p></div>
 
 <div class="gallery" id="gallery">
 </div>
 
 </body>
-<script>
-    function shuffle(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-
-            // swap elements array[i] and array[j]
-            // we use "destructuring assignment" syntax to achieve that
-            // you'll find more details about that syntax in later chapters
-            // same can be written as:
-            // let t = array[i]; array[i] = array[j]; array[j] = t
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-    }
-
-    var files = ["89DB3976-97AC-4063-B9D5-FCA74D7170EC.jpeg",
-        "FullSizeRender.jpeg",
-        "IMG_1269.JPEG",
-        "IMG_1270.JPEG",
-        "IMG_1930.JPG",
-        "IMG_2094.JPEG",
-        "IMG_2137.JPEG",
-        "IMG_2149.JPEG",
-        "IMG_2232.JPEG",
-        "IMG_2249.JPEG",
-        "IMG_2262.JPEG",
-        "IMG_2350.JPG",
-        "IMG_2385.JPG",
-        "IMG_2577.JPG",
-        "IMG_2599.JPG",
-        "IMG_2612.PNG",
-        "IMG_2614.JPG",
-        "IMG_2620.JPG",
-        "IMG_2636.JPG",
-        "IMG_2640.JPG",
-        "IMG_2641.JPG",
-        "IMG_2691.JPG",
-        "IMG_2692.JPG",
-        "IMG_2693.JPG",
-        "IMG_2697.PNG",
-        "IMG_2698.PNG",
-        "IMG_2699.PNG",
-        "IMG_2755.JPEG",
-        "IMG_2758.JPEG",
-        "IMG_2761.JPEG",
-        "IMG_2770.MP4",
-        "IMG_2778.JPEG",
-        "IMG_2784.JPEG",
-        "IMG_2788.JPEG",
-        "IMG_2792.JPG",
-        "IMG_2799.png",
-        "IMG_2805.JPG",
-        "IMG_2807.JPEG",
-        "IMG_2814.JPG",
-        "IMG_2833.JPG",
-        "IMG_2843.PNG",
-        "IMG_2844.PNG",
-        "IMG_2845.JPG",
-        "IMG_8291.JPG",
-        "IMG_8296.JPG",
-        "IMG_8297.JPG",
-        "IMG_2847.PNG",
-        "IMG_2849.JPG"
-    ]
-    shuffle(files)
-    var gallery = document.querySelector('#gallery');
-    files.forEach(function (file) {
-        console.log(file)
-        gallery.insertAdjacentHTML("beforeend", "<div class=\"gallery-item\">\n" +
-            "        <div class=\"content\"><img src=\"assets/images/Memories/" + file + "\"></div>\n" +
-            "    </div>")
-    });
-
-    var getVal = function (elem, style) {
-        return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
-    };
-    var getHeight = function (item) {
-        return item.querySelector('.content').getBoundingClientRect().height;
-    };
-    var resizeAll = function () {
-        var altura = getVal(gallery, 'grid-auto-rows');
-        var gap = getVal(gallery, 'grid-row-gap');
-        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-            var el = item;
-            el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-        });
-    };
-    gallery.querySelectorAll('img').forEach(function (item) {
-        item.classList.add('byebye');
-        if (item.complete) {
-            console.log(item.src);
-        } else {
-            item.addEventListener('load', function () {
-                var altura = getVal(gallery, 'grid-auto-rows');
-                var gap = getVal(gallery, 'grid-row-gap');
-                var gitem = item.parentElement.parentElement;
-                gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-                item.classList.remove('byebye');
-            });
-        }
-    });
-    window.addEventListener('resize', resizeAll);
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        item.addEventListener('click', function () {
-            item.classList.toggle('full');
-        });
-    });
-
-</script>
+<script src="assets/js/memories.js"></script>
 </html>
