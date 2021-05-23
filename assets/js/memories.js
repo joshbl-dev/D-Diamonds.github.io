@@ -98,7 +98,7 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
 });
 
 // countdown
-const countDownDate = new Date("Jul 24, 2021 10:14:00").getTime();
+const countDownDate = new Date("Jul 23, 2021 21:37:00").getTime();
 
 const countdown = setInterval(function () {
 
