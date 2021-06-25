@@ -95,6 +95,10 @@ p {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
+    .gallery-item {
+        align-items: center;
+        justify-self: center;
+    }
 }
 
 @-moz-keyframes zoomin {

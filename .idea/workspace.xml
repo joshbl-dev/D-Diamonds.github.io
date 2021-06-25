@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3613726-1f37-4c0d-bbce-2b74e2eeadc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2861.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2873.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2874.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2875.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-1.JPEG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-2.JPEG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-3.JPEG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-4.JPEG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image.JPEG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/memories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/memories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jekyll-theme-prologue.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/jekyll-theme-prologue.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memories.html" beforeDir="false" afterPath="$PROJECT_DIR$/memories.html" afterDir="false" />
-    </list>
+    <list default="true" id="d3613726-1f37-4c0d-bbce-2b74e2eeadc8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
