@@ -54,7 +54,16 @@ if (currentTime > new Date("Jun 4, 2021 00:00:00").getTime()) {
         "IMG_8296.JPG",
         "IMG_8297.JPG",
         "IMG_2847.PNG",
-        "IMG_2849.JPG"
+        "IMG_2849.JPG",
+        "IMG_2861.JPG",
+        "IMG_2873.JPG",
+        "IMG_2874.JPG",
+        "IMG_2875.JPG",
+        "lp_image.JPEG",
+        "lp_image-1.JPEG",
+        "lp_image-2.JPEG",
+        "lp_image-3.JPEG",
+        "lp_image-4.JPEG",
     ];
 
     function changeMessage() {

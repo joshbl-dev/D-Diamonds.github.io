@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3613726-1f37-4c0d-bbce-2b74e2eeadc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2861.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2873.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2874.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_2875.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-1.JPEG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-2.JPEG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-3.JPEG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image-4.JPEG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/lp_image.JPEG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/memories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/memories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jekyll-theme-prologue.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/jekyll-theme-prologue.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memories.html" beforeDir="false" afterPath="$PROJECT_DIR$/memories.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1uF0aziWHOAylm7noou2ubOzxYG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/Memories" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joshu\WebstormProjects\D-Diamonds.github.io\assets\images\Memories" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3613726-1f37-4c0d-bbce-2b74e2eeadc8" name="Default Changelist" comment="" />
+      <created>1624246099620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624246099620</updated>
+      <workItem from="1624246102172" duration="276000" />
+      <workItem from="1624246389667" duration="866000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
