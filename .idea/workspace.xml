@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3613726-1f37-4c0d-bbce-2b74e2eeadc8" name="Default Changelist" comment="" />
+    <list default="true" id="d3613726-1f37-4c0d-bbce-2b74e2eeadc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_3021.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Memories/IMG_3031.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/memories/countdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/memories/gallary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/memories/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/memories/quotes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/memories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/memories/memories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memories.html" beforeDir="false" afterPath="$PROJECT_DIR$/memories.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,11 +40,15 @@
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/Memories" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\joshu\WebstormProjects\D-Diamonds.github.io\assets\images\Memories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joshu\WebstormProjects\D-Diamonds.github.io\assets\js\memories" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -40,6 +61,7 @@
       <updated>1624246099620</updated>
       <workItem from="1624246102172" duration="276000" />
       <workItem from="1624246389667" duration="866000" />
+      <workItem from="1624832171227" duration="4414000" />
     </task>
     <servers />
   </component>
@@ -57,5 +79,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
