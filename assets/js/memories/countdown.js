@@ -1,7 +1,7 @@
 export class Countdown {
     static start() {
         const
-            countDownDate = new Date("Jul 23, 2021 21:37:00").getTime();
+            countDownDate = new Date("Aug 17, 2021 16:51:00").getTime();
 
         const
             countdown = setInterval(function () {
