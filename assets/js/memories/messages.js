@@ -23,6 +23,17 @@ export class Messages {
             Quotes.getHTML() +
             " <br/>\n" +
             " <br/>Below is a gallery of our memories with more to add every day\n" +
+            "</p>" : "<p>Coming soon... :P<br/><br/>Below is a gallery of our memories with more to add every day\n</p>",
+        "4 Month": new Date() >= new Date("Aug 4, 2021 00:00:00") ? "<p>Dear Sarah,\n" +
+            "    <br>Happy 4-month anniversary! I had an amazing time visiting you in California this past week.\n " +
+            "    I already miss all the different boba places near you... NJ nor Tech can match Newport Beach. I am so happy\n" +
+            "    we got to spend time together over the summmer! I can't wait to see you in just under 2 weeks again for the school year!\n" +
+            "    Sorry I couldn't add anything too special to this month's update, but hopefully my visit compensated for the loss. \n" +
+            "We are going to have a semester full of memories and adventures! See you soon :)" +
+            " <br/>Love,\n" +
+            " <br/>Joshua\n" +
+            " <br>\n" +
+            " <br>Below is a gallery of our memories with more to add every day\n" +
             "</p>" : "<p>Coming soon... :P<br/><br/>Below is a gallery of our memories with more to add every day\n</p>"
     }
 
@@ -104,6 +115,7 @@ export class Messages {
             "    <option value=\"0\">Select Month:</option>\n" +
             "    <option value=\"1\">2 Month</option>\n" +
             "    <option value=\"2\">3 Month</option>\n" +
+            "    <option value=\"3\">4 Month</option>\n" +
             "  </select>\n" +
             "</div>" +
             "</div>" +
