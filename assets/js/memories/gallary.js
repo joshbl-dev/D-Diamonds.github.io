@@ -57,8 +57,18 @@ export class Gallary {
         "lp_image-2.JPEG",
         "lp_image-3.JPEG",
         "lp_image-4.JPEG",
+        "IMG_3199.jpg",
+        "IMG_3221.JPG",
+        "IMG_3223.JPG",
+        "IMG_3238.JPG",
+        "IMG_3244.JPG",
+        "IMG_3246.JPG",
+        "IMG_3247.JPG",
+        "IMG_3248.JPG",
+        "IMG_3252.JPG"
     ];
 
+    
     static create() {
         Gallary.shuffle(Gallary.files)
         const gallery = document.querySelector('#gallery');
