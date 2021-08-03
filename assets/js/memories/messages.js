@@ -2,7 +2,7 @@ import {Quotes} from "./quotes.js";
 
 export class Messages {
     static messages = {
-        "2 Month": "<p>Dear Sarah,\n" +
+        "2 Month": new Date() >= new Date("Jun 4, 2021 00:00:00") ? "<p>Dear Sarah,\n" +
             "    <br>Happy 2-month anniversary, although it feels like almost a year in terms of memories with you. From our first date at The Yard, our actual first date\n" +
             "    having sushi, I have enjoyed constant happiness and memorable moments with you. Our trip to the lake house is unforgettable, driving around on Jet Ski’s\n" +
             "    while breaking our backs and obviously staying up watching Survivor. When I wake up, I smile thinking of you and our future. When I go to sleep, I feel\n" +
@@ -11,7 +11,7 @@ export class Messages {
             "    <br>Joshua\n" +
             "    <br>\n" +
             "    <br>Below is a gallery of our memories with more to add every day\n" +
-            "</p>",
+            "</p>" : "<p>Coming soon... :P<br/><br/>Below is a gallery of our memories with more to add every day\n</p>",
         "3 Month": new Date() >= new Date("Jul 4, 2021 00:00:00") ? "<p>Dear Sarah,\n" +
             "    <br>Happy 3-month anniversary! I can't believe how fast this summer has gone by. I am so excited to see you in a few days!\n " +
             "    We are going to make so many fun memories in California from Disneyland to celebrating your Birthday.\n" +
